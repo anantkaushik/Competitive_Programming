@@ -2,7 +2,7 @@
 int main(){
     int t; 
     scanf("%d",&t);
-    for(int a0 = 0; a0 < t; a0++){
+    for(int a0 = 0; a0 < t; a0++) {
         long int n,sum=0,p; 
         scanf("%ld",&n);
         p = (n-1)/3;
