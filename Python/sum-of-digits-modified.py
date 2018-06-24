@@ -22,7 +22,7 @@ Not Magic
 
 Explanation:
 1234 sums up to 10 which sums upto 1 so its a Magic Number.
-67 sums up to 11 which sums upto 2 so its not a Magic Number
+67 sums up to 13 which sums upto 4 so its not a Magic Number
 """
 def digitalRoot(num): #reference- https://en.wikipedia.org/wiki/Digital_root
     if num < 10:
