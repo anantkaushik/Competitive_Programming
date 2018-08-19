@@ -26,11 +26,5 @@ quick has 5 characters
 brown has 5 characters
 fox has 3 characters
 """
-t = int(input())
-while t > 0:
-    arr = list(map(str,input().split()))
-    ans = ""
-    for i in arr:
-        ans +=" " + str(len(i))
-    print(ans[1:])
-    t -= 1
+for _ in range(int(input())):
+    print(*[len(i) for i in input().split()])
