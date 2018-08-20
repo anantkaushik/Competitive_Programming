@@ -22,12 +22,9 @@ Output:
 0 2 2 0 1
 0 0 4 0
 """
-t = int(input())
-while t > 0:
+from collections import Counter
+for _ in range(int(input())):
     n = int(input())
     arr  = list(map(int,input().split()))
-    f = []
-    for i in range(1,n+1):
-        f.append(arr.count(i))
-    print(*f)
-    t -= 1
+    c = Counter(arr)
+    print(*[c[i] for i in range(1,n+1)])
