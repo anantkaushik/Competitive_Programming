@@ -25,6 +25,6 @@ for _ in range(int(input())):
     pos = -1
     for i in range(n):
         if arr[i] == 0:
-            pos+=1;
+            pos+=1
             arr[i],arr[pos] = arr[pos],arr[i]
     print(*arr)
