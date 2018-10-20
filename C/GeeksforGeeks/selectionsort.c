@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main()
+int* sort(int arr[100])
 {
 	int min,i,j,n,arr[100],tmp;
 	printf("Enter the no of elements of array");
@@ -30,10 +30,9 @@ void main()
 		min=tmp;
 		
 	}
-	printf("the sorted array is:\n");
 	
-	for(i=0;i<n;i++)
-	printf("%d ",arr[i]);
+	
+	return arr;
 	
 	
 	
