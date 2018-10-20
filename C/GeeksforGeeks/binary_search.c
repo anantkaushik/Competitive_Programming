@@ -2,16 +2,17 @@
 
 void main()
 {
-	int arr[100];
+	int arr[100],a[100];
 	int n,i,left,right,mid,search,c=0;
 	printf("Enter the no of elements in array");
 	scanf("%d",&n);
-	printf("Enter the elements in the array in sorted order:");
+	printf("Enter the elements in the array:");
 	for( i=0;i<n;i++)
 	{
-		scanf("%d",&arr[i]);
+		scanf("%d",&a[i]);
 		
 	}
+	arr=sort(a);
 	printf("enter the element to be searched");
 	scanf("%d",&search);
 	
