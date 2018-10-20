@@ -1,13 +1,16 @@
 #include<stdio.h>
 
-int* sort(int arr[100])
+void main()
 {
-	int min,i,j,n,tmp;
-	printf("Enter the no of elements of array");
+	int min,i,j,tmp,arr[100],n;
+	printf("Enter the no of elements in array");
 	scanf("%d",&n);
-	printf("enter the elements in the array :");
-	for(i=0;i<n;i++)
-	scanf("%d",&arr[i]);
+	printf("Enter the elements in the array:");
+	for( i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		
+	}
 	
 	for(i=0;i<n;i++)
 	{
@@ -31,8 +34,9 @@ int* sort(int arr[100])
 		
 	}
 	
-	
-	return arr;
+	printf("the sorted array is :");
+	for(i=0;i<n;i++)
+		printf("%d ",arr[i]);		
 	
 	
 	
