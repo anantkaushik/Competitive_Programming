@@ -6,7 +6,7 @@ void main()
 	int n,i,left,right,mid,search,c=0;
 	printf("Enter the no of elements in array");
 	scanf("%d",&n);
-	printf("Enter the elements in the array:");
+	printf("Enter the elements in the array in sorted order:");
 	for( i=0;i<n;i++)
 	{
 		scanf("%d",&arr[i]);
