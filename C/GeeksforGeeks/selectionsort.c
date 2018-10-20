@@ -2,7 +2,7 @@
 
 int* sort(int arr[100])
 {
-	int min,i,j,n,arr[100],tmp;
+	int min,i,j,n,tmp;
 	printf("Enter the no of elements of array");
 	scanf("%d",&n);
 	printf("enter the elements in the array :");
