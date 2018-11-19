@@ -37,7 +37,6 @@ Sample Output
  ID: 8135627
  Grade: O
 """
-
 class Person:
 	def __init__(self, firstName, lastName, idNumber):
 		self.firstName = firstName
