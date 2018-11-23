@@ -4,8 +4,8 @@ Problem Link: https://practice.geeksforgeeks.org/problems/inorder-traversal/1
 Given a binary tree, print inorder traversal of it. For example, inorder traversal of below tree is "5 10 1 39"
 
         1
-     /      \
-   10        39
+     /     \
+   10       39
   /
 5
 
