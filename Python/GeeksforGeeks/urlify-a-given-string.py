@@ -36,10 +36,3 @@ should be those 23 characters with 2 extra spaces removed and spaces between wor
 for _ in range(int(input())):
     print (input().replace(' ','%20'))
     input() # for the length of the string 
-
-"""
-In some inputs length of the given string was wrong. So, for successfull submission you have to this question while ignoring 
-the given length of the string from the input. 
-
-Solution with in-place operation: https://github.com/anantkaushik/cracking-the-coding-interview/blob/master/arrays-and-strings/URLify.py
-"""
