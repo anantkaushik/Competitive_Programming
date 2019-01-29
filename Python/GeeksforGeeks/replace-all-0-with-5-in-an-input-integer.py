@@ -29,4 +29,14 @@ if __name__=='__main__':
         print(convertFive(n))
 
 def convertFive(n):
-    return str(n).replace("0","5")
+    # Code here
+    res = 0
+    count = 1
+    while n:
+        rem = n % 10
+        res += count*(5 if rem == 0 else rem)
+        count *= 10
+        n //= 10
+    return res
+# def convertFive(n):
+#     return str(n).replace("0","5")
