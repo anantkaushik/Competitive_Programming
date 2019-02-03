@@ -1,13 +1,16 @@
 """
 Problem Link: https://practice.geeksforgeeks.org/problems/majority-element/0
 
-Given an array A of N elements. Find the majority element in the array. A majority element in an array A of size N is an element that appears more than N/2 times in the array.
+Given an array A of N elements. Find the majority element in the array. 
+A majority element in an array A of size N is an element that appears more than N/2 times in the array.
 
 Input:  
-The first line of the input contains T denoting the number of testcases. The first line of the test case will be the size of array and second line will be the elements of the array.
+The first line of the input contains T denoting the number of testcases. 
+The first line of the test case will be the size of array and second line will be the elements of the array.
 
 Output: 
-For each test case the output will be the majority element of the array. Output "-1" if no majority element is there in the array.
+For each test case the output will be the majority element of the array. 
+Output "-1" if no majority element is there in the array.
 
 Constraints:
 1 <= T<= 100
