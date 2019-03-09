@@ -1,4 +1,6 @@
 """
+Problem Link: https://practice.geeksforgeeks.org/problems/armstrong-numbers/0
+
 For a given 3 digit number, find whether it is armstrong number or not. An Armstrong number of three 
 digits is an integer such that the sum of the cubes of its digits is equal to the number itself. 
 For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371
@@ -17,17 +19,14 @@ Input:
 Output:
 Yes
 """
-t = int(input())
-while t > 0:
-    n = int(input())
+def isArmstrong(n):
     cube = 0
     temp = n
-    while temp > 1:
-        temp1 = temp % 10
+    while temp:
+        cube += (temp % 10)**3
         temp //= 10
-        cube += temp1**3
-    if cube == n:
-        print("Yes")
-    else:
-        print("No")
-    t -= 1
+    return "Yes" if cube == n else "No"
+    
+for _ in range(int(input())):
+    n = int(input())
+    print(isArmstrong(n))
