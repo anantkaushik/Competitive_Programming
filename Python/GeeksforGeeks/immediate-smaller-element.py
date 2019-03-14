@@ -22,16 +22,13 @@ Sample Output
 2 1 -1 3 -1
 -1 2 -1 1 -1 -1
 """
-t = int(input())
-while t > 0:
+for _ in range(int(input())):
     n = int(input())
     arr = list(map(int,input().split()))
-    result = []
     for i in range(n-1):
-        if arr[i+1] < arr[i]:
-            result.append(arr[i+1])
+        if arr[i] > arr[i+1]:
+            print(arr[i+1],end=' ')
         else:
-            result.append(-1)
-    result.append(-1)
-    print(*result)
-    t -= 1
+            print(-1,end=' ')
+    print(-1,end=' ')
+    print()
