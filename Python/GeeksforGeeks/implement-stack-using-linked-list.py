@@ -40,7 +40,6 @@ In the first test case for query
 1 4    the stack will be {2 4}
 2       poped element will be 4
 """
-{
 if __name__=='__main__':
     t=int(input())
     for i in range(t):
@@ -58,7 +57,6 @@ if __name__=='__main__':
             elif(s.isEmpty()):
                 print(-1)
         print()
-}
 
 ''' Please note that it's Function problem i.e.
 you need to write your solution in the form of Function(s) only.
