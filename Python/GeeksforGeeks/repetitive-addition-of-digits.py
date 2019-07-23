@@ -27,13 +27,11 @@ Output :
 Explanation:  For example, if we conisder 98, we get 9+8  = 17 after first addition. Then we get 1+7 = 8.  We stop at this point because we are left with one digit.
 """
 def addDigit(n):
-    if n < 10:
-        return n
-    new = 0
-    while n:
-        new += n % 10
-        n //= 10
-    return addDigit(new)
+    if n == 0:
+        return 0
+    elif n % 9 == 0:
+        return 9
+    return n % 9
     
 for _ in range(int(input())):
     n = int(input())
