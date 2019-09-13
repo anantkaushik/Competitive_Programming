@@ -33,7 +33,6 @@ Testcase 1: Given array : 1 2 3 5. Missing element is 4.
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int,input().split()))
-    summ = 0
-    for i in range(n-1):
-        summ += arr[i]
-    print(((n*(n+1))//2)-summ)
+    actual_sum = n*(n+1)//2
+    arr_sum = sum(arr)
+    print(actual_sum-arr_sum)
