@@ -30,9 +30,9 @@ Vaibhav placed 4 integers but he picked up only 3 numbers. So missing number wil
 For the second case
 Vaibhav placed 5 integers on the board, but picked up only 4 integers, so the missing number will be 4 so that it will become 1,2,3,4,5.
 """
-t = int(input())
-while t > 0:
+for _ in range(int(input())):
     n = int(input())
-    nums = list(map(int,input().split()))
-    print((n*(n+1))//2 - sum(nums))
-    t -= 1
+    arr = list(map(int,input().split()))
+    actual_sum = n*(n+1)//2
+    arr_sum = sum(arr)
+    print(actual_sum-arr_sum)
