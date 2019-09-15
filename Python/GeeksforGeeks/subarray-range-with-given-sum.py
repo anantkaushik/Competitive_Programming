@@ -34,14 +34,17 @@ Output:
 Explanation:
 Testcase 1: Subarrays with sum -10 are: [10, 2, -2, -20], [2, -2, -20, 10] and [-20, 10].
 """
-def countSubSum(arr,target):
-    count,summ,d = 0,0,{0:1}
-    for i in arr:
-        summ += i
-        if summ - target in d:
-            count += d[summ-target]
-        d[summ] = d.get(summ,0) + 1
-    return count
+def subArraySum(arr,target):
+    summ = 0
+    d= {}
+    d[0] = 0
+    for i in range(len(arr)):
+        summ +=  arr[i]
+        difference = summ - target
+        if difference in d:
+            return [d[difference]+1,i+1]
+        d[summ] = i+1
+    return [-1]
     
 for _ in range(int(input())):
     n = int(input())
