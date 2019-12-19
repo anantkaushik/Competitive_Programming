@@ -31,26 +31,20 @@ Output:
 3
 5
 """
-def binarySearch(arr,target):
+def binarySearch(arr, target):
     l = len(arr) - 1
-    start,end = 0,l 
+    start,end = 1,l-1 
     while start <= end:
         mid = (start+end)//2
         if arr[mid] == target: 
-            return mid 
+            return arr[mid] 
         elif arr[mid] > target:
             end = mid - 1
         else:
             start = mid + 1
-    return mid
+    return arr[end] if target - nums[end] < nums[end+1] - target else arr[end+1]
     
 for _ in range(int(input())):
     n,k = map(int,input().split())
-    a = list(map(int,input().split()))
-    mid = binarySearch(a, k)
-    if mid < n-1 and (a[mid+1]-k) <= (k-a[mid]):
-        print(a[mid+1])
-    elif mid > 1 and (k-a[mid-1])<(a[mid]-k):
-        print(a[mid-1])
-    else:
-        print(a[mid])
+    nums = list(map(int,input().split()))
+    print(binarySearch(nums, k))
