@@ -25,20 +25,16 @@ Output:
 Yes
 No
 """
-import collections
 def palindromePermutation(s):
-    countOdd = 0
-    d = collections.defaultdict(int)
-    for i in s:
-        d[i] += 1
-        if d[i] % 2 == 1:
-            countOdd += 1
+    alphabets = set()
+    for c in s:
+        if c in alphabets:
+            alphabets.remove(c)
         else:
-            countOdd -= 1
-    return countOdd <= 1
+            alphabets.add(c)
+    return len(alphabets) <= 1
         
+
 for _ in range(int(input())):
-    if palindromePermutation(input()):
-        print("Yes")
-    else:
-        print("No")
+    print("Yes" if palindromePermutation(input()) else "No")
+    
