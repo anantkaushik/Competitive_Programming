@@ -13,7 +13,7 @@ def candy_crush(input):
     f = 1
     
     for index in range(1, len(input)):
-        if char == input[index]: # abccccbbaa f - 3 char-a  stack = []
+        if char == input[index]:
             f += 1
         else:
             if f >= 3:
